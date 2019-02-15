@@ -1,23 +1,15 @@
 class Cuenta():
-    def __init__(self, ingreso = 3, reintegro= 4, transferencia = 5):
-        self.ingreso = ingreso
-        self.reintegro = reintegro
-        self.transferencia = transferencia
-    
-    def get_ingreso(self):
-        return self.ingreso
-    def get_reintegro(self):
-        return self.reintegro
-    def get_transferencia(self):
-        return self.transferencia
-    def set_ingreso(self, ingreso):
-        self.ingreso = ingreso
-    def set_reintegro(self, reintegro):
-        self.reintegro = reintegro
-    def set_transferencia(self, transferencia):
-        self.transferencia = transferencia
+    def __init__(self, saldo = 2):
+        self.saldo = saldo
+    def get_ingreso(self, x):
+        return (self.saldo + self.x)
+    def get_reintegro(self, x):
+        return (self.x)
+    def get_transferencia(self,x):
+        return (self.saldo - self.x)
+
 
 a = Cuenta()
 print(a.get_ingreso())
-print(a.set_reintegro(2))
+
 print(a.get_reintegro())
